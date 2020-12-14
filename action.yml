@@ -1,0 +1,14 @@
+name: "best-of-update-action"
+description: "🔄 GitHub Action to update a best-of list."
+author: "ML Tooling <team@mltooling.org>"
+inputs:
+  libraries_key:
+    description: "Libraries.io API key: https://libraries.io/api"
+    required: true
+  github_key:
+    description: "Github API Key to request data from Github: https://github.com/settings/tokens"
+    required: false
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
