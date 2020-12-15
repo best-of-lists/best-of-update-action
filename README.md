@@ -33,7 +33,7 @@ _TODO_
 ```yaml
 steps:
   - name: update-best-of-list
-    uses: ml-tooling/best-of-update-action@v0.1.2
+    uses: ml-tooling/best-of-update-action@v0.1.3
     with:
       libraries_key: "<libraries-io-key>"
       github_key: ${{ secrets.GITHUB_TOKEN }}
