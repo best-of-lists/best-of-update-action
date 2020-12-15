@@ -30,6 +30,15 @@ _TODO_
 
 _TODO_
 
+```yaml
+steps:
+  - name: update-best-of-list
+    uses: mml-tooling/best-of-update-action@v0.1.2
+    with:
+      libraries_key: "<libraries-io-key>"
+      github_key: ${{ secrets.GITHUB_TOKEN }}
+```
+
 ## Support & Feedback
 
 This project is maintained by [Benjamin Räthlein](https://twitter.com/raethlein), [Lukas Masuch](https://twitter.com/LukasMasuch), and [Jan Kalkan](https://www.linkedin.com/in/jan-kalkan-b5390284/). Please understand that we won't be able to provide individual support via email. We also believe that help is much more valuable if it's shared publicly so that more people can benefit from it.
