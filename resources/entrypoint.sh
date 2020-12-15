@@ -23,7 +23,11 @@ if [ -z "$INPUT_PROJECTS_FILE" ]; then
 fi
 
 if [ -n "$INPUT_GITHUB_KEY" ]; then
+    # Use github token from inputs
     GENERATE_ARGS="$GENERATE_ARGS --github-key=\"$INPUT_GITHUB_KEY\""
+elif [ -n "$GITHUB_TOKEN" ]; then
+    # Use github token provided via Github Actions
+    GENERATE_ARGS="$GENERATE_ARGS --github-key=\"$GITHUB_TOKEN\""
 fi
 
 # Navigate to the github action home directory
