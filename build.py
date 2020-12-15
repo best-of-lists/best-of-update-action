@@ -31,6 +31,16 @@ def main(args: dict) -> None:
         # )
 
     if args.get(build_utils.FLAG_RELEASE):
+        # Bump all versions in some filess
+        previous_version = build_utils.get_latest_version()
+        if previous_version:
+            build_utils.replace_in_files(
+                previous_version,
+                version,
+                file_paths=["./README.md"],
+                regex=False,
+                exit_on_error=True,
+            )
         # TODO: action should not be released right now
         # build_docker.release_docker_image(
         #     IMAGE_NAME,
