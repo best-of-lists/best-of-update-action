@@ -9,6 +9,7 @@
 
 <p align="center">
     <a href="https://github.com/ml-tooling/best-of" title="Best-of-badge"><img src="https://img.shields.io/badge/-best--of-blue?link=https://github.com/ml-tooling/best-of-generator&style=flat&color=5ac4bf&logoWidth=20&labelColor=grey&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAAASAAAAEgARslrPgAAAcZJREFUaN7tmDFrFEEYht/vcs2lEBQhpJUgCIGrooVpQlKly6/RVsROkZR2Abs06RTBVoJesPAgRX7BFXdZSJ99LG4PL3tLLrMzu0Nwnm5nd+Z7nxmYnV0pkUjcgOWMgfdAL2DNHvChGPtWQgjMOAshAawCv+9aNKQAwMcAAocuBcv9rUrAof7EzB57CkwkPbrr82Z2I/NSgXIHR0FnltUr3+80GaYNkkBskkBskkBskkBskkBskkBsuhVtmaSHs4umT59lltTLyg1VK3DcZmBHFrJVfQ88kDSQ9DR22hIXkrbM7Gq+cWEFige2JH1SxZJFICuyLISvBfDa8bvZhVeueersQl8bnO0vDY79D+C0gdn/0Ur4QmAbyAOGz4GXrQkUEm8DCrxpNXwhYMA7z5XIi4kw/0T1RXaBQY3wv4Ad3/pBzIsZfC7pQNILSZuSyn/sxpKGkn5KOpE0MDPvY0pjSwe3/1ELxb0/jSaB2HT9h5gCdCTtSdqX9Kzi/jdJ55oeRb6bWR5bfj5cHxg6bKF/gH7s3LPwG0BW4z1wCTyJnV/AZ4838ZFvfe+9GRhJWqvZfWRm67EFrlV/N8vNbMU3QyLxP/MXaNf32Sohq8oAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTktMTEtMTNUMTM6Mzg6MTArMDA6MDCuo3JzAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE5LTExLTEzVDEzOjM4OjEwKzAwOjAw3/7KzwAAACh0RVh0c3ZnOmJhc2UtdXJpAGZpbGU6Ly8vdG1wL21hZ2ljay0wREdPdU80YXKayL4AAAAASUVORK5CYII="></a>
+    <a href="https://github.com/ml-tooling/best-of-update-action/actions?query=workflow%3Abuild-pipeline" title="Build Status"><img src="https://img.shields.io/github/workflow/status/ml-tooling/best-of-update-action/build-pipeline"></a>
     <a href="https://github.com/ml-tooling/best-of-update-action/blob/main/LICENSE" title="Project License"><img src="https://img.shields.io/badge/License-MIT-green.svg"></a>
     <a href="https://gitter.im/ml-tooling/best-of" title="Chat on Gitter"><img src="https://badges.gitter.im/ml-tooling/best-of.svg"></a>
     <a href="https://twitter.com/mltooling" title="ML Tooling on Twitter"><img src="https://img.shields.io/twitter/follow/mltooling.svg?style=social"></a>
@@ -25,10 +26,6 @@
 
 _TODO_
 
-## Highlights
-
-- _TODO_
-
 ## Getting Started
 
 _TODO_
@@ -39,9 +36,9 @@ This project is maintained by [Benjamin Räthlein](https://twitter.com/raethlein
 
 | Type                     | Channel                                              |
 | ------------------------ | ------------------------------------------------------ |
-| 🚨&nbsp; **Bug Reports**       | <a href="https://github.com/ml-tooling/best-of-update-action/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3Abug+sort%3Areactions-%2B1-desc+" title="Open Bug Report"><img src="https://img.shields.io/github/issues/mltooling/project-defaults/bug.svg?label=bug"></a>                                 |
-| 🎁&nbsp; **Feature Requests**  | <a href="https://github.com/ml-tooling/best-of-update-action/issues?q=is%3Aopen+is%3Aissue+label%3Afeature+sort%3Areactions-%2B1-desc" title="Open Feature Request"><img src="https://img.shields.io/github/issues/mltooling/project-defaults/feature.svg?label=feature%20request"></a>                                 |
-| 👩‍💻&nbsp; **Usage Questions**   |  <a href="https://github.com/ml-tooling/best-of-update-action/issues?q=is%3Aopen+is%3Aissue+label%3Asupport+sort%3Areactions-%2B1-desc" title="Open Support Request"> <img src="https://img.shields.io/github/issues/ml-toolingbest-of-update-action/support.svg?label=support%20request"></a> <a href="https://gitter.im/ml-tooling/best-of" title="Chat on Gitter"><img src="https://badges.gitter.im/ml-tooling/lazydocs.svg"></a> |
+| 🚨&nbsp; **Bug Reports**       | <a href="https://github.com/ml-tooling/best-of-update-action/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3Abug+sort%3Areactions-%2B1-desc+" title="Open Bug Report"><img src="https://img.shields.io/github/issues/ml-tooling/best-of-update-action/bug.svg?label=bug"></a>                                 |
+| 🎁&nbsp; **Feature Requests**  | <a href="https://github.com/ml-tooling/best-of-update-action/issues?q=is%3Aopen+is%3Aissue+label%3Afeature+sort%3Areactions-%2B1-desc" title="Open Feature Request"><img src="https://img.shields.io/github/issues/ml-tooling/best-of-update-action/feature.svg?label=feature%20request"></a>                                 |
+| 👩‍💻&nbsp; **Usage Questions**   |  <a href="https://github.com/ml-tooling/best-of-update-action/issues?q=is%3Aopen+is%3Aissue+label%3Asupport+sort%3Areactions-%2B1-desc" title="Open Support Request"> <img src="https://img.shields.io/github/issues/ml-tooling/best-of-update-action/support.svg?label=support%20request"></a> <a href="https://gitter.im/ml-tooling/best-of" title="Chat on Gitter"><img src="https://badges.gitter.im/ml-tooling/lazydocs.svg"></a> |
 | 🗯&nbsp; **General Discussion** | <a href="https://gitter.im/ml-tooling/best-of" title="Chat on Gitter"><img src="https://badges.gitter.im/ml-tooling/best-of.svg"></a> <a href="https://twitter.com/mltooling" title="ML Tooling on Twitter"><img src="https://img.shields.io/twitter/follow/mltooling.svg?style=social"></a>|
 | ❓&nbsp; **Other Requests** | <a href="mailto:team@mltooling.org" title="Email ML Tooling Team"><img src="https://img.shields.io/badge/email-ML Tooling-green?logo=mail.ru&logoColor=white"></a> |
 
@@ -58,4 +55,4 @@ Refer to our [contribution guides](https://github.com/ml-tooling/best-of-update-
 
 ---
 
-Licensed **MIT**. Created and maintained with ❤️ by developers from Berlin.
+Licensed **MIT**. Created and maintained with ❤️&nbsp; by developers from Berlin.
