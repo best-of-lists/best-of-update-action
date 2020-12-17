@@ -62,4 +62,13 @@ jobs:
           rm bin/hub
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      # TODO: create draft release with added projects, trending projects, removed projects (hidden)
+      - name: create-release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ env.VERSION  }}
+          release_name: "Update: ${{ env.VERSION  }}"
+          body_path: "latest_changes.md"
+          draft: true
+          prerelease: false
