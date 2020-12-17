@@ -37,7 +37,7 @@ def main(args: dict) -> None:
             build_utils.replace_in_files(
                 previous_version,
                 version,
-                file_paths=["./README.md"],
+                file_paths=["./README.md", "./workflows/update-best-of-list.yml"],
                 regex=False,
                 exit_on_error=True,
             )
