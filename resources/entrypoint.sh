@@ -12,9 +12,6 @@ fi
 
 if [ -n "$INPUT_LIBRARIES_KEY" ]; then
     GENERATE_ARGS="$GENERATE_ARGS --libraries-key=$INPUT_LIBRARIES_KEY"
-else
-    echo "Libraries.io API key is required."
-    exit 1
 fi
 
 if [ -z "$INPUT_PROJECTS_FILE" ]; then
