@@ -8,11 +8,11 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/best-of-lists/best-of" title="Best-of-badge"><img src="http://bit.ly/3o3EHNN"></a>
+    <a href="https://best-of.org" title="Best-of Badge"><img src="http://bit.ly/3o3EHNN"></a>
     <a href="https://github.com/search?q=best-of-lists+best-of-update-action+path%3A.github%2Fworkflows+language%3AYAML+fork%3Atrue&type=code" title="Action Usage Count"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fapi-git-master.endbug.vercel.app%2Fapi%2Fgithub-actions%2Fused-by%3Faction%3Dbest-of-lists%2Fbest-of-update-action%26badge%3Dtrue"></a>
     <a href="https://github.com/best-of-lists/best-of-update-action/actions?query=workflow%3Abuild-pipeline" title="Build Status"><img src="https://img.shields.io/github/workflow/status/best-of-lists/best-of-update-action/build-pipeline"></a>
-    <a href="https://github.com/best-of-lists/best-of-update-action/blob/main/LICENSE" title="Project License"><img src="https://img.shields.io/badge/License-MIT-green.svg"></a>
     <a href="https://gitter.im/ml-tooling/best-of" title="Chat on Gitter"><img src="https://badges.gitter.im/ml-tooling/best-of.svg"></a>
+    <a href="https://bestoflists.substack.com/subscribe" title="Subscribe for updates"><img src="http://bit.ly/2Md9rxM"></a>
     <a href="https://twitter.com/best_of_lists" title="Best-of on Twitter"><img src="https://img.shields.io/twitter/follow/best_of_lists.svg?style=social&label=Follow"></a>
 </p>
 
