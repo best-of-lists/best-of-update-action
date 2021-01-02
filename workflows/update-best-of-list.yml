@@ -75,6 +75,6 @@ jobs:
         with:
           tag_name: ${{ env.VERSION  }}
           release_name: "Update: ${{ env.VERSION  }}"
-          body_path: "latest_changes.md"
+          body_path: "latest-changes.md"
           draft: true
           prerelease: false
