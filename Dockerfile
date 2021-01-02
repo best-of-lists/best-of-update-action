@@ -1,6 +1,6 @@
 FROM python:3.8
 
-RUN pip install --no-cache-dir best-of==0.4.7
+RUN pip install --no-cache-dir best-of==0.4.10
 
 COPY ./resources/entrypoint.sh /entrypoint.sh
 
