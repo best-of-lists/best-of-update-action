@@ -34,7 +34,7 @@ _TODO_
 ```yaml
 steps:
   - name: update-best-of-list
-    uses: best-of-lists/best-of-update-action@v0.4.9
+    uses: best-of-lists/best-of-update-action@v0.4.10
     with:
       libraries_key: ${{ secrets.LIBRARIES_KEY }}
       github_key: ${{ secrets.GITHUB_TOKEN }}
