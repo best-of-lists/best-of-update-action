@@ -1,3 +1,3 @@
 # Changelog
 
-You can find the changelog of this project in the [Github release section](https://github.com/ml-tooling/best-of-update-action/releases).
+You can find the changelog of this project in the [Github release section](https://github.com/best-of-lists/best-of-update-action/releases).
