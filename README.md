@@ -19,45 +19,46 @@
 <p align="center">
   <a href="#getting-started">Getting Started</a> •
   <a href="#support--feedback">Support</a> •
-  <a href="https://github.com/best-of-lists/best-of-update-action/issues/new?labels=bug&template=01_bug-report.md">Report a Bug</a> •
+  <a href="https://github.com/best-of-lists/best-of-generator/issues/new?labels=bug&template=01_bug-report.md">Report a Bug</a> •
   <a href="#faq">FAQ</a> •
   <a href="#contribution">Contribution</a> •
   <a href="https://github.com/best-of-lists/best-of-update-action/releases">Changelog</a>
 </p>
 
-_TODO_
-
+The best-of update action is a Github Action for automated and scheduled updates of best-of markdown pages. It uses the [best-of-generator](https://github.com/best-of-lists/best-of-generator) CLI tool to generate and update a best-of markdown page from a list of projects configured in a `yaml` file. We also provide a full workflow definition which automatically creates pull requests and Github releases for every update.
 ## Getting Started
 
-_TODO_
+> 👉 If you want to create your own best-of list, we strongly recommend to follow [this guide](#TODO). You will be able to set-up your own best-of list repository from a template within 3 minutes. It already includes this Github Action and some other useful template files.
+
+If you create a best-of list using the [offical guide and template](#TODO), the full workflow is already included without any further requirements from your side. If you want to manually set-up this Github Action (without the template), we recommend to use the [`update-best-of-list.yml` workflow](https://github.com/best-of-lists/best-of-update-action/blob/main/workflows/update-best-of-list.yml). It runs the best-of generator, auto-commits all changes into a separated branch, auto-creates a pull request as well as a draft release for the update. For integration into an existing workflow, please refer to [this section](#integrate-into-existing-workflow). You can find documentation on the `projects.yaml` file and the markdown generation process in the [best-of-generator documentation](https://github.com/best-of-lists/best-of-generator#documentation).
+
+#### Using the full workflow
+
+To use the `update-best-of-list` workflow, just copy [this file](https://github.com/best-of-lists/best-of-update-action/blob/main/workflows/update-best-of-list.yml) into the `.github/workflows/` folder of your repository. Once it is pushed into your repository, it will automatically run every seven days. You can also manually run this workflow by selecting: `Actions` -> `update-best-of-list` -> `Run workflow` _(a version as input is not required)_.
+
+#### Integrate into existing workflow
+
+In case you only want to use the best-of generator action itself to integrate it into an existing workflow, you can also just use the `best-of-update-action` as a step in your workflow, for example:
 
 ```yaml
 steps:
   - name: update-best-of-list
     uses: best-of-lists/best-of-update-action@v0.4.10
     with:
-      libraries_key: ${{ secrets.LIBRARIES_KEY }}
       github_key: ${{ secrets.GITHUB_TOKEN }}
+      libraries_key: ${{ secrets.LIBRARIES_KEY }}
+      projects_file: "./projects.yaml"
 ```
+
+If you want to enable the best-of generator to also fetch information from [libraries.io](https://libraries.io), make sure to add your libraries API key as a secret to the repository with the name `LIBRARIES_KEY`.
 
 ## Support & Feedback
 
-This project is maintained by [Benjamin Räthlein](https://twitter.com/raethlein), [Lukas Masuch](https://twitter.com/LukasMasuch), and [Jan Kalkan](https://www.linkedin.com/in/jan-kalkan-b5390284/). Please understand that we won't be able to provide individual support via email. We also believe that help is much more valuable if it's shared publicly so that more people can benefit from it.
-
-| Type                     | Channel                                              |
-| ------------------------ | ------------------------------------------------------ |
-| 🚨&nbsp; **Bug Reports**       | <a href="https://github.com/best-of-lists/best-of-update-action/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3Abug+sort%3Areactions-%2B1-desc+" title="Open Bug Report"><img src="https://img.shields.io/github/issues/best-of-lists/best-of-update-action/bug.svg?label=bug"></a>                                 |
-| 🎁&nbsp; **Feature Requests**  | <a href="https://github.com/best-of-lists/best-of-update-action/issues?q=is%3Aopen+is%3Aissue+label%3Afeature+sort%3Areactions-%2B1-desc" title="Open Feature Request"><img src="https://img.shields.io/github/issues/best-of-lists/best-of-update-action/feature.svg?label=feature%20request"></a>                                 |
-| 👩‍💻&nbsp; **Usage Questions**   |  <a href="https://github.com/best-of-lists/best-of-update-action/issues?q=is%3Aopen+is%3Aissue+label%3Asupport+sort%3Areactions-%2B1-desc" title="Open Support Request"> <img src="https://img.shields.io/github/issues/best-of-lists/best-of-update-action/support.svg?label=support%20request"></a> <a href="https://gitter.im/ml-tooling/best-of" title="Chat on Gitter"><img src="https://badges.gitter.im/ml-tooling/best-of.svg"></a> |
-| 🗯&nbsp; **General Discussion** | <a href="https://gitter.im/ml-tooling/best-of" title="Chat on Gitter"><img src="https://badges.gitter.im/ml-tooling/best-of.svg"></a> <a href="https://twitter.com/best_of_lists" title="Best-of on Twitter"><img src="https://img.shields.io/twitter/follow/best_of_lists.svg?style=social&label=Follow"></a>|
-| ❓&nbsp; **Other Requests** | <a href="mailto:best-of@mltooling.org" title="Email best-of team"><img src="https://img.shields.io/badge/email-best of-green?logo=mail.ru&logoColor=white"></a> |
+You can find all channels for support, questions, and feedback in the [best-of-generator documentation](https://github.com/best-of-lists/best-of-generator#support--feedback). If you have found a bug or want to request a feature, please open an issue in the [best-of-generator repository](https://github.com/best-of-lists/best-of-generator/issues/new/choose) since issues are deactivated in this repository.
 
 ## Contribution
 
-- Pull requests are encouraged and always welcome. Read our [contribution guidelines](https://github.com/best-of-lists/best-of-update-action/tree/main/CONTRIBUTING.md) and check out [help-wanted](https://github.com/best-of-lists/best-of-update-action/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3A"help+wanted"+sort%3Areactions-%2B1-desc+) issues.
-- Submit Github issues for any [feature request and enhancement](https://github.com/best-of-lists/best-of-update-action/issues/new?assignees=&labels=feature&template=02_feature-request.md&title=), [bugs](https://github.com/best-of-lists/best-of-update-action/issues/new?assignees=&labels=bug&template=01_bug-report.md&title=), or [documentation](https://github.com/best-of-lists/best-of-update-action/issues/new?assignees=&labels=documentation&template=03_documentation.md&title=) problems.
-- By participating in this project, you agree to abide by its [Code of Conduct](https://github.com/best-of-lists/best-of-update-action/blob/main/.github/CODE_OF_CONDUCT.md).
-- The [development section](#development) below contains information on how to build and test the project after you have implemented some changes.
+Contributions are very welcome. You can find information on how to contribute to this project in the [best-of-generator repository](https://github.com/best-of-lists/best-of-generator#contribution).
 
 ## Development
 
