@@ -15,7 +15,7 @@ if [ -n "$INPUT_LIBRARIES_KEY" ]; then
 fi
 
 if [ -z "$INPUT_PROJECTS_FILE" ]; then
-    # set defaulg
+    # set default
     INPUT_PROJECTS_FILE="projects.yaml"
 fi
 

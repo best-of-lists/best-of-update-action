@@ -3,10 +3,14 @@ description: "🔄 GitHub Action to update a best-of list."
 author: "Best-of Team <best-of@mltooling.org>"
 inputs:
   libraries_key:
-    description: "Libraries.io API key: https://libraries.io/api"
+    description: "Libraries.io API Key (from https://libraries.io/api)"
     required: true
   github_key:
-    description: "Github API Key to request data from Github: https://github.com/settings/tokens"
+    description: "Github API Token (from https://github.com/settings/tokens)"
+    required: false
+  projects_file:
+    description: "Projects yaml file to use for best-of generation"
+    default: "projects.yaml"
     required: false
 
 runs:
