@@ -26,9 +26,10 @@
 </p>
 
 The best-of update action is a Github Action for automated and scheduled updates of best-of markdown pages. It uses the [best-of-generator](https://github.com/best-of-lists/best-of-generator) CLI tool to generate and update a best-of markdown page from a list of projects configured in a `yaml` file. We also provide a full workflow definition which automatically creates pull requests and Github releases for every update.
+
 ## Getting Started
 
-> 👉 If you want to create your own best-of list, we strongly recommend to follow [this guide](#TODO). You will be able to set-up your own best-of list repository from a template within 3 minutes. It already includes this Github Action and some other useful template files.
+> 🧙‍♂️ If you want to create your own best-of list, we strongly recommend to follow [this guide](#TODO). You will be able to set-up your own best-of list repository from a template within 3 minutes. It already includes this Github Action and some other useful template files. Further manual steps for setting up the Github Action are not required.
 
 If you create a best-of list using the [offical guide and template](#TODO), the full workflow is already included without any further requirements from your side. If you want to manually set-up this Github Action (without the template), we recommend to use the [`update-best-of-list.yml` workflow](https://github.com/best-of-lists/best-of-update-action/blob/main/workflows/update-best-of-list.yml). It runs the best-of generator, auto-commits all changes into a separated branch, auto-creates a pull request as well as a draft release for the update. For integration into an existing workflow, please refer to [this section](#integrate-into-existing-workflow). You can find documentation on the `projects.yaml` file and the markdown generation process in the [best-of-generator documentation](https://github.com/best-of-lists/best-of-generator#documentation).
 
