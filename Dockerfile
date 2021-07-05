@@ -1,6 +1,6 @@
 FROM python:3.8
 
-RUN pip install --no-cache-dir best-of==0.7.1
+RUN pip install --no-cache-dir best-of==0.7.2
 
 # Install additional packages for headless chrome & pyppeteer.
 # See here: https://github.com/pyppeteer/pyppeteer/issues/111
