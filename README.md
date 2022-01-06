@@ -44,7 +44,7 @@ In case you only want to use the best-of generator action itself to integrate it
 ```yaml
 steps:
   - name: update-best-of-list
-    uses: best-of-lists/best-of-update-action@v0.8.0
+    uses: best-of-lists/best-of-update-action@v0.8.1
     with:
       github_key: ${{ secrets.GITHUB_TOKEN }}
       libraries_key: ${{ secrets.LIBRARIES_KEY }}
